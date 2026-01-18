@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Media Library - Stream your movies, series, and music">
+    <title>Media Library</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>🎬 Media Library</h1>
+            <p>Your personal streaming collection</p>
+        </div>
+
+        <!-- Search and Filter Section -->
+        <div class="search-container">
+            <input 
+                type="text" 
+                class="search-box" 
+                id="search-input" 
+                placeholder="Search movies, series, music..."
+                autocomplete="off"
+            >
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="movies">Movies</button>
+                <button class="filter-btn" data-filter="series">Series</button>
+                <button class="filter-btn" data-filter="music">Music</button>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading-state">
+            <div class="spinner"></div>
+            <p>Loading your library...</p>
+        </div>
+
+        <!-- Content will be dynamically inserted here -->
+        <div id="content-container"></div>
+    </div>
+
+    <!-- Modal Template -->
+    <div id="media-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <div id="modal-actions"></div>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+# ---------------------------
+# Node / npm
+# ---------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------
+# Environment variables
+# ---------------------------
+.env
+.env.*
+!.env.example
+
+
+# ---------------------------
+# Runtime data / cache
+# ---------------------------
+cache/
+data/
+logs/
+tmp/
+*.log
+
+# ---------------------------
+# OS / Editor junk
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# IDEs
+# ---------------------------
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------
+# Coverage / testing
+# ---------------------------
+coverage/
+.nyc_output/
+
